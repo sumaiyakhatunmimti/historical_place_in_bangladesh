@@ -1,0 +1,117 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family:Arial, Helvetica, sans-serif;
+    text-align: center;
+
+}
+
+.menu-bar{
+    background: rgb(207, 235, 252);
+    text-align: center;
+}
+.menu-bar ul {
+    display:inline-flex;
+    list-style:none;
+    color: #fff;
+}
+.menu-bar ul li{
+    width: 120px;
+    margin: 15px;
+    padding:10px;
+}
+.menu-bar ul li a{
+text-decoration: none;
+color: crimson;
+}
+.active, .menu-bar ul li:hover{
+background:rgb(255, 243, 222);
+}
+.menu-bar.fa{
+    margin: 8px;
+}
+
+.sub-menu-1{
+    display: none;
+
+}
+.menu-bar ul li:hover .sub-menu-1{
+    display: block;
+    position: absolute;
+    background:rgb(164, 209, 230);
+    margin: top 15px;
+    margin-left: -10px;
+}
+.menu-bar ul li:hover .sub-menu-1 ul{
+    display: block;
+    margin: 10px;
+}
+.menu-bar ul li:hover .sub-menu-1 ul li{
+    width: 150px;
+    padding: 10px;
+    border-bottom: 1px dotted #fff;
+    background: transparent;
+    border-radius: 0;
+    text-align: left;
+}
+.menu-bar ul li:hover .sub-menu-1 ul li:last-child{
+    border-bottom: none;
+}
+.menu-bar ul li:hover .sub-menu-1 ul li a:hover{
+color: darkblue;
+}
+.section{
+        background-image: linear-gradient(rgba(215, 167, 167, 0.7),rgba(215, 157, 157, 0.7)), url(../img/photo.jpg);
+        background-size: cover;
+        height: 100vh;
+        background-position: center;
+        background-repeat: no-repeat;
+
+}
+.hero{
+    width: 80%;
+    margin: auto;
+    padding: 30px 0px;
+}
+article h1{
+    font-size: 50px;
+    font-weight: 500;
+    text-transform: uppercase;
+    color: black;
+}
+article h1::after{
+    content: "";
+    height: 3px;
+    width: 225px;
+    background-color: rgb(121, 18, 18);
+    display: block;
+    margin: auto;
+}
+img{
+    margin: auto;
+    display: block;
+    margin-top: 40px;
+    height: 220px;
+    width: 220px;
+    border-radius: 50%;
+    border: 3px solid #bef4f7;
+
+}
+p{
+    font-size: 17px;
+    color:black;
+    line-height: 1.5;;
+}
+article h5{
+    text-transform: uppercase;
+    font-size: 32px;
+    font-weight: 500;
+    margin-top: 30px;
+    color: black;
+
+}
+article h3{
+    font-size: 18px;
+    color: black;
+}
